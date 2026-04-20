@@ -1,0 +1,440 @@
+| name | value | 
+ |-----|-----|
+| task | MNIST |
+| synthesizer | Pattern |
+| batch_size | 64 |
+| test_batch_size | 100 |
+| lr | 0.01 |
+| momentum | 0.9 |
+| decay | 0.0005 |
+| epochs | 30 |
+| poison_epoch | 10 |
+| poison_epoch_stop | 100 |
+| save_on_epochs | None |
+| optimizer | SGD |
+| log_interval | 100 |
+| poisoning_proportion | 1.0 |
+| backdoor_label | 8 |
+| resume_model | None |
+| save_model | False |
+| log | True |
+| report_train_loss | False |
+| transform_train | True |
+| fl | True |
+| fl_no_models | 20 |
+| fl_local_epochs | 1 |
+| fl_poison_epochs | 5 |
+| fl_total_participants | 20 |
+| fl_eta | 1 |
+| fl_sample_dirichlet | True |
+| fl_dirichlet_alpha | 0.9 |
+| fl_number_of_adversaries | 4 |
+| fl_weight_scale | 2 |
+| fl_adv_group_size | 2 |
+| attack | ThrDFed |
+| defense | FLAME |
+| fl_num_neurons | 8 |
+| noise_mask_alpha | 0 |
+| lagrange_step | 0.1 |
+| current_time | Apr.12_16.40.01 |
+| name | flame |
+FLAME: Finish loading data
+FLAME: cluster results [0, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:     1. Accuracy: Top-1: 74.32 | Loss: value: 1.60
+Backdoor True . Epoch:     1. Accuracy: Top-1: 23.30 | Loss: value: 2.06
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+FLAME: Finish loading data
+FLAME: cluster results [0, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, 0, -1, 0, -1, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:     2. Accuracy: Top-1: 89.41 | Loss: value: 0.67
+Backdoor True . Epoch:     2. Accuracy: Top-1: 11.48 | Loss: value: 2.68
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+FLAME: Finish loading data
+FLAME: cluster results [0, 0, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, -1, 0, -1, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:     3. Accuracy: Top-1: 92.92 | Loss: value: 0.35
+Backdoor True . Epoch:     3. Accuracy: Top-1: 10.09 | Loss: value: 3.93
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+FLAME: Finish loading data
+FLAME: cluster results [0, 0, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, -1, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:     4. Accuracy: Top-1: 93.85 | Loss: value: 0.24
+Backdoor True . Epoch:     4. Accuracy: Top-1: 9.87 | Loss: value: 4.92
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+FLAME: Finish loading data
+FLAME: cluster results [0, 0, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, -1, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:     5. Accuracy: Top-1: 94.67 | Loss: value: 0.20
+Backdoor True . Epoch:     5. Accuracy: Top-1: 9.80 | Loss: value: 5.53
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+FLAME: Finish loading data
+FLAME: cluster results [0, 0, -1, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:     6. Accuracy: Top-1: 95.07 | Loss: value: 0.17
+Backdoor True . Epoch:     6. Accuracy: Top-1: 9.66 | Loss: value: 6.12
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+FLAME: Finish loading data
+FLAME: cluster results [0, 0, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, -1, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:     7. Accuracy: Top-1: 95.63 | Loss: value: 0.15
+Backdoor True . Epoch:     7. Accuracy: Top-1: 9.79 | Loss: value: 6.38
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+FLAME: Finish loading data
+FLAME: cluster results [0, 0, -1, -1, 0, -1, 0, -1, 0, 0, 0, -1, 0, 0, -1, 0, -1, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:     8. Accuracy: Top-1: 96.08 | Loss: value: 0.14
+Backdoor True . Epoch:     8. Accuracy: Top-1: 9.90 | Loss: value: 6.65
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+FLAME: Finish loading data
+FLAME: cluster results [0, 0, -1, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:     9. Accuracy: Top-1: 96.32 | Loss: value: 0.13
+Backdoor True . Epoch:     9. Accuracy: Top-1: 9.89 | Loss: value: 6.84
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: alpha [0.35422079201896617, 0.6454621963345976]
+3DFed: scaling factor is 1
+Curvature value: [0.04631362669169903, 0.11753580207005143, 0.10431796545162797, 0.06464862899156287]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.012237896211445332 | Lagrange mul: 1.0249329588375986
+Lagrange duality loss: 0.0018608225509524345 | Lagrange mul: 1.0232032525469545
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(30), np.int64(11), np.int64(2), np.int64(3)], -0.5654990673065186], [[np.int64(30), np.int64(7), np.int64(2), np.int64(4)], -0.009220093488693237], [[np.int64(30), np.int64(15), np.int64(0), np.int64(1)], 0.5342066287994385], [[np.int64(30), np.int64(1), np.int64(1), np.int64(1)], 1.5278346538543701]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    10. Accuracy: Top-1: 96.72 | Loss: value: 0.11
+Backdoor True . Epoch:    10. Accuracy: Top-1: 9.67 | Loss: value: 7.14
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: feedbacks [3.8173583662714095e-05, -0.002324141414141414, 2.448047419804742e-05, 1.0007010253108398e-05]
+Avg indicator feedback:         -0.000562870086506886
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.08546646125614643, 0.05102469748817384, 0.06712145288474858, 0.0702181113883853]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.02596520446240902 | Lagrange mul: 1.0450160657987
+Lagrange duality loss: 0.009258001111447811 | Lagrange mul: 1.0398471737280492
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(30), np.int64(15), np.int64(0), np.int64(1)], 0.5342066287994385], [[np.int64(30), np.int64(11), np.int64(2), np.int64(3)], -0.1794658601284027], [[np.int64(30), np.int64(3), np.int64(2), np.int64(4)], -1.9829720258712769], [[np.int64(1), np.int64(17), np.int64(1), np.int64(2)], 0.4462897777557373]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    11. Accuracy: Top-1: 96.85 | Loss: value: 0.11
+Backdoor True . Epoch:    11. Accuracy: Top-1: 9.58 | Loss: value: 7.60
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.044590295758098364, 0.14735181536525488, 0.033415691810660064, 0.03822477674111724]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.008159981109201908 | Lagrange mul: 1.0336452349554746
+Lagrange duality loss: 0.010089685209095478 | Lagrange mul: 1.044918931275606
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(30), np.int64(3), np.int64(2), np.int64(4)], -0.23059546947479248], [[np.int64(30), np.int64(16), np.int64(3), np.int64(1)], -0.2779066562652588], [[np.int64(30), np.int64(1), np.int64(4), np.int64(3)], 0.46314671635627747], [[np.int64(1), np.int64(7), np.int64(3), np.int64(4)], -0.006705522537231445]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    12. Accuracy: Top-1: 97.03 | Loss: value: 0.10
+Backdoor True . Epoch:    12. Accuracy: Top-1: 9.61 | Loss: value: 7.70
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.20765969180501997, 0.20675496011972427, 0.07662154175341129, 0.031159453559666872]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.002601630985736847 | Lagrange mul: 1.0297707872698085
+Lagrange duality loss: 0.008685912005603313 | Lagrange mul: 1.0400156297255312
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(30), np.int64(1), np.int64(1), np.int64(1)], -0.8082948923110962], [[np.int64(30), np.int64(2), np.int64(1), np.int64(0)], -1.074373722076416], [[np.int64(30), np.int64(3), np.int64(2), np.int64(4)], -1.044943928718567], [[np.int64(30), np.int64(7), np.int64(2), np.int64(1)], -1.1962838172912598]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    13. Accuracy: Top-1: 97.20 | Loss: value: 0.09
+Backdoor True . Epoch:    13. Accuracy: Top-1: 9.61 | Loss: value: 7.69
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.23704025894403458, 0.20948347309604287, 0.077122762799263, 0.11023213807493448]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.006552563514560461 | Lagrange mul: 1.0271037467289712
+Lagrange duality loss: 0.011839372105896473 | Lagrange mul: 1.0398761122953146
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(44), np.int64(2), np.int64(2), np.int64(1)], -0.003166496753692627], [[np.int64(1), np.int64(17), np.int64(4), np.int64(0)], -0.03781169652938843], [[np.int64(30), np.int64(18), np.int64(2), np.int64(3)], 1.6415491104125977], [[np.int64(30), np.int64(15), np.int64(4), np.int64(4)], 2.0603649616241455]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, 0, 0, -1, 0, 0, -1, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    14. Accuracy: Top-1: 97.39 | Loss: value: 0.09
+Backdoor True . Epoch:    14. Accuracy: Top-1: 9.65 | Loss: value: 7.80
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.029893139377236366, 0.17159303976222873, 0.03211195720359683, 0.07690541329793632]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.01588795706629753 | Lagrange mul: 1.0383606157731267
+Lagrange duality loss: 0.005367683712393045 | Lagrange mul: 1.0336069620680066
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(28), np.int64(1), np.int64(4), np.int64(4)], -0.5032867193222046], [[np.int64(30), np.int64(7), np.int64(1), np.int64(1)], 0.93802809715271], [[np.int64(30), np.int64(1), np.int64(4), np.int64(3)], -0.7938593626022339], [[np.int64(30), np.int64(9), np.int64(4), np.int64(4)], -0.28219074010849]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    15. Accuracy: Top-1: 97.44 | Loss: value: 0.08
+Backdoor True . Epoch:    15. Accuracy: Top-1: 9.60 | Loss: value: 8.01
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.05478764604777098, 0.2780110752210021, 0.15011173114180565, 0.14537400100380182]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.01375227328389883 | Lagrange mul: 1.045388005021959
+Lagrange duality loss: 0.023292748257517815 | Lagrange mul: 1.0454149465309455
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(23), np.int64(7), np.int64(1), np.int64(3)], -0.8001923561096191], [[np.int64(30), np.int64(1), np.int64(1), np.int64(1)], -0.29001384973526], [[np.int64(12), np.int64(12), np.int64(4), np.int64(4)], -0.837864339351654], [[np.int64(30), np.int64(1), np.int64(4), np.int64(3)], 0.6944872140884399]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    16. Accuracy: Top-1: 97.51 | Loss: value: 0.08
+Backdoor True . Epoch:    16. Accuracy: Top-1: 9.41 | Loss: value: 8.41
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.02246623020619154, 0.11099102068692446, 0.042846329510211945, 0.4047926012426615]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.00841344054788351 | Lagrange mul: 1.0268253364600244
+Lagrange duality loss: 0.01017391961067915 | Lagrange mul: 1.0312034432077786
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(30), np.int64(12), np.int64(3), np.int64(3)], 0.5014240741729736], [[np.int64(10), np.int64(7), np.int64(1), np.int64(0)], -0.22761523723602295], [[np.int64(26), np.int64(1), np.int64(3), np.int64(1)], 1.0754913091659546], [[np.int64(30), np.int64(1), np.int64(3), np.int64(2)], 0.27669593691825867]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    17. Accuracy: Top-1: 97.78 | Loss: value: 0.08
+Backdoor True . Epoch:    17. Accuracy: Top-1: 9.55 | Loss: value: 8.29
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.05444307904690504, 0.7950312783941627, 0.6142497314140201, 0.6872693756595254]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.0034741468261927366 | Lagrange mul: 1.0332249640254296
+Lagrange duality loss: 0.0026593299116939306 | Lagrange mul: 1.0268762127263475
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(23), np.int64(1), np.int64(2), np.int64(3)], 0.7995404005050659], [[np.int64(26), np.int64(1), np.int64(3), np.int64(2)], -2.9072165489196777], [[np.int64(30), np.int64(7), np.int64(4), np.int64(3)], 2.9930379390716553], [[np.int64(28), np.int64(1), np.int64(4), np.int64(4)], 1.0481104850769043]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    18. Accuracy: Top-1: 97.85 | Loss: value: 0.07
+Backdoor True . Epoch:    18. Accuracy: Top-1: 9.53 | Loss: value: 8.54
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.81060840934515, 0.945026345551014, 0.53079454600811, 0.6079864837229252]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.01833723857998848 | Lagrange mul: 1.0365650149644359
+Lagrange duality loss: 0.011951417662203312 | Lagrange mul: 1.0369969182647767
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(42), np.int64(6), np.int64(3), np.int64(2)], -0.24922192096710205], [[np.int64(26), np.int64(16), np.int64(4), np.int64(3)], 0.19147992134094238], [[np.int64(16), np.int64(6), np.int64(3), np.int64(4)], -1.2036412954330444], [[np.int64(1), np.int64(17), np.int64(4), np.int64(0)], -1.502223253250122]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    19. Accuracy: Top-1: 97.88 | Loss: value: 0.07
+Backdoor True . Epoch:    19. Accuracy: Top-1: 9.63 | Loss: value: 8.53
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.32149172364734113, 0.5021072942763567, 0.1944312327541411, 0.3649209621362388]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.021982397884130478 | Lagrange mul: 1.0366208152379832
+Lagrange duality loss: 0.02230883575975895 | Lagrange mul: 1.0392147639533502
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(28), np.int64(1), np.int64(4), np.int64(4)], 1.2593343257904053], [[np.int64(44), np.int64(1), np.int64(2), np.int64(3)], -0.8082017302513123], [[np.int64(30), np.int64(1), np.int64(3), np.int64(2)], -1.7211307287216187], [[np.int64(10), np.int64(7), np.int64(4), np.int64(3)], 0.06896443665027618]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    20. Accuracy: Top-1: 97.94 | Loss: value: 0.07
+Backdoor True . Epoch:    20. Accuracy: Top-1: 9.60 | Loss: value: 8.61
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.24996301345527172, 0.22239704616367817, 0.1447916515171528, 0.20368749648332596]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.006253710016608238 | Lagrange mul: 1.0304725266294557
+Lagrange duality loss: 0.004864877555519342 | Lagrange mul: 1.0413723239442327
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(44), np.int64(2), np.int64(2), np.int64(1)], 0.16596168279647827], [[np.int64(30), np.int64(1), np.int64(0), np.int64(1)], 1.6732141971588135], [[np.int64(23), np.int64(7), np.int64(1), np.int64(3)], -1.204200029373169], [[np.int64(16), np.int64(1), np.int64(2), np.int64(0)], -2.0531938076019287]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    21. Accuracy: Top-1: 97.96 | Loss: value: 0.07
+Backdoor True . Epoch:    21. Accuracy: Top-1: 9.41 | Loss: value: 9.07
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.06892695720307529, 0.3414195291697979, 0.1928860954940319, 0.04836879763752222]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.029041847214102745 | Lagrange mul: 1.0463718839222558
+Lagrange duality loss: 0.020248861983418465 | Lagrange mul: 1.0372492286609494
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(23), np.int64(1), np.int64(2), np.int64(3)], -0.03827735781669617], [[np.int64(10), np.int64(7), np.int64(4), np.int64(3)], 0.18943101167678833], [[np.int64(30), np.int64(12), np.int64(4), np.int64(4)], -1.1629425287246704], [[np.int64(23), np.int64(16), np.int64(1), np.int64(3)], 0.5327165126800537]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    22. Accuracy: Top-1: 98.02 | Loss: value: 0.07
+Backdoor True . Epoch:    22. Accuracy: Top-1: 9.40 | Loss: value: 9.16
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.5931126872310415, 0.2775735706090927, 0.4355070621240884, 0.4188922047615051]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.019609956070780754 | Lagrange mul: 1.049273608555086
+Lagrange duality loss: 0.014610091224312782 | Lagrange mul: 1.0296611604746426
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(1), np.int64(2), np.int64(0), np.int64(3)], 1.4059245586395264], [[np.int64(14), np.int64(7), np.int64(1), np.int64(4)], 3.411620855331421], [[np.int64(30), np.int64(7), np.int64(3), np.int64(4)], 3.1313858032226562], [[np.int64(44), np.int64(11), np.int64(0), np.int64(2)], -2.706423282623291]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    23. Accuracy: Top-1: 98.08 | Loss: value: 0.06
+Backdoor True . Epoch:    23. Accuracy: Top-1: 9.58 | Loss: value: 8.96
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.5290021053515375, 0.08706139540299773, 0.24811744689941406, 0.49590163212269545]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.0194558035582304 | Lagrange mul: 1.03557429718785
+Lagrange duality loss: 0.004207164980471134 | Lagrange mul: 1.041429253225215
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(1), np.int64(2), np.int64(4), np.int64(2)], -0.24533364176750183], [[np.int64(23), np.int64(1), np.int64(2), np.int64(3)], -1.3276934623718262], [[np.int64(27), np.int64(4), np.int64(4), np.int64(0)], -1.962296724319458], [[np.int64(30), np.int64(1), np.int64(4), np.int64(2)], -2.075359344482422]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    24. Accuracy: Top-1: 98.13 | Loss: value: 0.06
+Backdoor True . Epoch:    24. Accuracy: Top-1: 9.54 | Loss: value: 9.14
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.2185873296111822, 0.12936255149543285, 0.508383977226913, 0.7248915480449796]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.03094128891825676 | Lagrange mul: 1.0387350446777415
+Lagrange duality loss: 0.02204810455441475 | Lagrange mul: 1.0455976717406879
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(38), np.int64(7), np.int64(4), np.int64(1)], 0.07040798664093018], [[np.int64(30), np.int64(1), np.int64(0), np.int64(1)], -0.08270144462585449], [[np.int64(43), np.int64(7), np.int64(1), np.int64(1)], 0.2734363079071045], [[np.int64(1), np.int64(1), np.int64(0), np.int64(1)], -1.9770115613937378]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    25. Accuracy: Top-1: 98.17 | Loss: value: 0.06
+Backdoor True . Epoch:    25. Accuracy: Top-1: 9.61 | Loss: value: 9.05
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.13557436084374785, 0.13221047073602676, 0.5375130972824991, 0.24771388433873653]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.020157774910330772 | Lagrange mul: 1.038463802402839
+Lagrange duality loss: 0.0040519097819924355 | Lagrange mul: 1.0413550217403098
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(30), np.int64(7), np.int64(1), np.int64(0)], 0.6595626473426819], [[np.int64(17), np.int64(2), np.int64(3), np.int64(3)], -0.30903610587120056], [[np.int64(1), np.int64(11), np.int64(4), np.int64(1)], 0.6319954991340637], [[np.int64(23), np.int64(7), np.int64(3), np.int64(2)], -1.4381017684936523]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    26. Accuracy: Top-1: 98.25 | Loss: value: 0.06
+Backdoor True . Epoch:    26. Accuracy: Top-1: 9.62 | Loss: value: 9.09
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.05894251447170973, 0.47394194453954697, 0.14655481278896332, 0.7149775000289083]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.0039591677486896515 | Lagrange mul: 1.033829394984059
+Lagrange duality loss: 0.019825590774416924 | Lagrange mul: 1.0455960461637002
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(23), np.int64(1), np.int64(2), np.int64(3)], -1.5830621719360352], [[np.int64(23), np.int64(2), np.int64(1), np.int64(1)], 0.3078952431678772], [[np.int64(23), np.int64(7), np.int64(2), np.int64(3)], 1.6585923433303833], [[np.int64(1), np.int64(2), np.int64(4), np.int64(1)], -0.5232170224189758]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, -1, 0, 0, 0, -1, 0]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    27. Accuracy: Top-1: 98.26 | Loss: value: 0.06
+Backdoor True . Epoch:    27. Accuracy: Top-1: 9.62 | Loss: value: 9.21
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.2771377572789788, 0.056782275438308716, 0.44043006747961044, 0.09590635076165199]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.003039310220628977 | Lagrange mul: 1.0331806082511323
+Lagrange duality loss: 0.018249966204166412 | Lagrange mul: 1.0372016553301362
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(30), np.int64(1), np.int64(4), np.int64(2)], 0.6135553121566772], [[np.int64(30), np.int64(11), np.int64(3), np.int64(4)], 2.0595266819000244], [[np.int64(1), np.int64(19), np.int64(4), np.int64(1)], -0.476837158203125], [[np.int64(18), np.int64(2), np.int64(1), np.int64(1)], -1.1170282363891602]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, 0, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    28. Accuracy: Top-1: 98.27 | Loss: value: 0.05
+Backdoor True . Epoch:    28. Accuracy: Top-1: 9.60 | Loss: value: 9.37
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.2641584873199463, 0.6130301998928189, 0.14023551531136036, 0.11517821834422648]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.013601640239357948 | Lagrange mul: 1.0393145841546356
+Lagrange duality loss: 0.005249085370451212 | Lagrange mul: 1.03450294432696
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(36), np.int64(6), np.int64(3), np.int64(1)], -0.1434236764907837], [[np.int64(1), np.int64(2), np.int64(4), np.int64(1)], -0.850763201713562], [[np.int64(30), np.int64(6), np.int64(2), np.int64(0)], 0.45262277126312256], [[np.int64(23), np.int64(7), np.int64(2), np.int64(3)], 1.0639429092407227]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, 0, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, -1]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    29. Accuracy: Top-1: 98.36 | Loss: value: 0.05
+Backdoor True . Epoch:    29. Accuracy: Top-1: 9.63 | Loss: value: 9.35
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
+3DFed: disable adaptive tuning
+3DFed: alpha [0.1, 0.1]
+3DFed: scaling factor is 1
+Curvature value: [0.4531619381159544, 0.27258153073489666, 0.30384723329916596, 0.45220635645091534]
+3DFed: Start optimizing noise masks
+Lagrange duality loss: 0.019830835983157158 | Lagrange mul: 1.0381540818139905
+Lagrange duality loss: 0.027398791164159775 | Lagrange mul: 1.0465714642312374
+3DFed: Finish optimizing noise masks
+3DFed: indicators and corresponding value [[[np.int64(30), np.int64(7), np.int64(3), np.int64(4)], 2.3524277210235596], [[np.int64(1), np.int64(17), np.int64(4), np.int64(0)], 2.2146849632263184], [[np.int64(23), np.int64(2), np.int64(3), np.int64(1)], -0.5027279257774353], [[np.int64(1), np.int64(2), np.int64(0), np.int64(3)], 0.4939734935760498]]
+FLAME: Finish loading data
+FLAME: cluster results [-1, -1, -1, -1, 0, 0, 0, -1, 0, -1, 0, -1, 0, 0, 0, 0, -1, 0, -1, 0]
+FLAME: Finish norm clipping
+FLAME: Finish adding noise
+Backdoor False. Epoch:    30. Accuracy: Top-1: 98.37 | Loss: value: 0.05
+Backdoor True . Epoch:    30. Accuracy: Top-1: 9.56 | Loss: value: 9.69
+Saving accuracy record to saved_models/model_MNIST_Apr.12_16.40.01_flame/accuracy.csv
